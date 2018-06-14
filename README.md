@@ -3,13 +3,13 @@
 ## Tool set-up  
 
 ### BUSCO  
-We ran BUSCO version 3.0.2 with the Euarchontoglires ortholog set version 2017-02-13.  
+We installed BUSCO version 3.0.2 (Simão et al., 2015; Waterhouse et al., 2018) with the Euarchontoglires ortholog set version 2017-02-13 (Zdobnov et al., 2017).  
 
 ### assemblathon-stats-ex.pl  
-We obtained assemblathon-stats-ex.pl from NSO-genome-scripts version 1.0.0 (Bradnam et al., 2013; Hanna & Henderson, 2017).  
+We obtained assemblathon-stats-ex.pl from NSO-genome-scripts version 1.0.0 (Bradnam et al., 2013; Hanna & Henderson, 2017).  We used this script to calculate a variety of assembly continuity statistics at both the scaffold and contig level.  
 
 ## assembly-stats  
-We obtained assembly-stats commit f5a9e95f4d6f8c2cb19fae529db9b6215ef5c954 (Hunt, 2018).  
+We obtained assembly-stats commit f5a9e95f4d6f8c2cb19fae529db9b6215ef5c954 (Hunt, 2018) and followed the installation instructions.  
 ```
 git clone https://github.com/sanger-pathogens/assembly-stats.git  
 mkdir build  
@@ -19,6 +19,7 @@ make
 make test  
 make install  
 ```
+We used this tool to calculate N60-N90 and L60-L90 statistics.  
 
 ## Panu2.0  
 * Obtained Panu2.0 assembly files  
@@ -76,8 +77,14 @@ assembly-stats Panu3_unchrom.fa >Panu3_unchrom.fa_assembly-stats
 
 
 ## References  
-Bradnam KR., Fass JN., Alexandrov A., Baranay P., Bechner M., Birol I., Boisvert S., Chapman JA., Chapuis G., Chikhi R., Chitsaz H., Chou W-C., Corbeil J., Del Fabbro C., Docking TR., Durbin R., Earl D., Emrich S., Fedotov P., Fonseca NA., Ganapathy G., Gibbs RA., Gnerre S., Godzaridis E., Goldstein S., Haimel M., Hall G., Haussler D., Hiatt JB., Ho IY., Howard J., Hunt M., Jackman SD., Jaffe DB., Jarvis ED., Jiang H., Kazakov S., Kersey PJ., Kitzman JO., Knight JR., Koren S., Lam T-W., Lavenier D., Laviolette F., Li Y., Li Z., Liu B., Liu Y., Luo R., MacCallum I., MacManes MD., Maillet N., Melnikov S., Naquin D., Ning Z., Otto TD., Paten B., Paulo OS., Phillippy AM., Pina-Martins F., Place M., Przybylski D., Qin X., Qu C., Ribeiro FJ., Richards S., Rokhsar DS., Ruby JG., Scalabrin S., Schatz MC., Schwartz DC., Sergushichev A., Sharpe T., Shaw TI., Shendure J., Shi Y., Simpson JT., Song H., Tsarev F., Vezzi F., Vicedomini R., Vieira BM., Wang J., Worley KC., Yin S., Yiu S-M., Yuan J., Zhang G., Zhang H., Zhou S., Korf IF. 2013. Assemblathon 2: evaluating de novo methods of genome assembly in three vertebrate species. GigaScience 2:10. DOI: 10.1186/2047-217X-2-10.  
+Bradnam KR., Fass JN., Alexandrov A., Baranay P., Bechner M., Birol I., Boisvert S., Chapman JA., Chapuis G., Chikhi R., Chitsaz H., Chou W-C., Corbeil J., Del Fabbro C., Docking TR., Durbin R., Earl D., Emrich S., Fedotov P., Fonseca NA., Ganapathy G., Gibbs RA., Gnerre S., Godzaridis E., Goldstein S., Haimel M., Hall G., Haussler D., Hiatt JB., Ho IY., Howard J., Hunt M., Jackman SD., Jaffe DB., Jarvis ED., Jiang H., Kazakov S., Kersey PJ., Kitzman JO., Knight JR., Koren S., Lam T-W., Lavenier D., Laviolette F., Li Y., Li Z., Liu B., Liu Y., Luo R., MacCallum I., MacManes MD., Maillet N., Melnikov S., Naquin D., Ning Z., Otto TD., Paten B., Paulo OS., Phillippy AM., Pina-Martins F., Place M., Przybylski D., Qin X., Qu C., Ribeiro FJ., Richards S., Rokhsar DS., Ruby JG., Scalabrin S., Schatz MC., Schwartz DC., Sergushichev A., Sharpe T., Shaw TI., Shendure J., Shi Y., Simpson JT., Song H., Tsarev F., Vezzi F., Vicedomini R., Vieira BM., Wang J., Worley KC., Yin S., Yiu S-M., Yuan J., Zhang G., Zhang H., Zhou S., Korf IF. 2013. Assemblathon 2: evaluating de novo methods of genome assembly in three vertebrate species. *GigaScience* 2:10. DOI: 10.1186/2047-217X-2-10.  
 
-Hanna ZR, Henderson JB. 2017. NSO-genome-scripts Version 1.0.0. Zenodo. DOI: 10.5281/zenodo.805012  
+Hanna ZR, Henderson JB. 2017. NSO-genome-scripts Version 1.0.0. *Zenodo*. DOI: 10.5281/zenodo.805012  
 
 Hunt M. 2018. assembly-stats. [Accessed 2018 June 14]. Available at: https://github.com/sanger-pathogens/assembly-stats  
+
+Simão FA, Waterhouse RM, Ioannidis P, Kriventseva EV, Zdobnov EM. 2015. BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs. *Bioinformatics* 31: 3210–3212. DOI: 10.1093/bioinformatics/btv351  
+
+Waterhouse RM, Seppey M, Simão FA, Manni M, Ioannidis P, Klioutchnikov G, et al. 2018. BUSCO Applications from Quality Assessments to Gene Prediction and Phylogenomics. *Mol Biol Evol* 35: 543–548. DOI: 10.1093/molbev/msx319  
+
+Zdobnov EM, Tegenfeldt F, Kuznetsov D, Waterhouse RM, Simão FA, Ioannidis P, et al. 2017. OrthoDB v9.1: cataloging evolutionary and functional annotations for animal, fungal, plant, archaeal, bacterial and viral orthologs. *Nucleic Acids Res* 45: D744–D749. DOI: 10.1093/nar/gkw1119  
